@@ -1,0 +1,80 @@
+header {
+  background-color: $primary;
+  padding: 24px;
+  color: $true-white;
+}
+.subhead {
+  width: 612px;
+  display: flex;
+  font-size: 24px;
+  font-weight: 400;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 17px;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: auto;
+      bottom: 5px;
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid $true-white;
+
+    }
+    &.no-box {
+      position: static;
+      padding-left: 0;
+      margin-right: 24px;
+    }
+  }
+}
+.banner {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 48px;
+  background-color: $yellow;
+  width: 113px;
+  height: 216px;
+
+  .center-stripe {
+    background-color: $red;
+    width: 47px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .brand-logo {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 14px;
+    width: 85px;
+    height: 53px;
+    background-color: $true-white;
+    border-radius: 53%;
+    font-size: 20px;
+    line-height: 53px;
+    font-weight: 700;
+    text-align: center;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      top: auto;
+      content: '';
+      height: 53px;
+      width: 85px;
+      display: block;
+      background-image: url('../assets/svg/laurel-wreath-flattened.svg');
+      background-repeat: none;
+      background-size: cover;
+    }
+  }
+}

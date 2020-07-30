@@ -4,3 +4,20 @@ $secondary: #99361D;
 $tertiary: #A38225;
 $accent: #DB9C6F;
 $dark: #64520F;
+
+$true-white: #fff;
+$true-black:  #000;
+$charcoal: #333;
+$yellow: #F8E71C;
+$red: #D0021B;
+
+@mixin text-default-color {
+  color: $charcoal;
+}
+
+.text-default {
+  @include text-default-color;
+}
+.text-alternate {
+  color: $yellow;
+}

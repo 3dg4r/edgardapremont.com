@@ -1,18 +1,18 @@
 <script>
-import NavigationBar from '@/components/navigation-bar.vue';
+// import NavigationBar from '@/components/navigation-bar.vue';
 
 export default {
   name: 'App',
-  components: {
-    NavigationBar,
-  },
+  // components: {
+  //   NavigationBar,
+  // },
 };
 </script>
 
 <template>
   <div id="app">
     <div v-cloak>
-      <NavigationBar></NavigationBar>
+      <!-- NavigationBar></NavigationBar -->
       <router-view/>
     </div>
   </div>

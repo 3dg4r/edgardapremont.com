@@ -1,3 +1,23 @@
 @import '~normalize.css';
 
 @import '_colors.scss';
+
+@import '_home.scss';
+
+html {
+  @include text-default-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
+  min-height: 100%;
+  width: 100%;
+}
+body {
+  height: 100vh;
+}
+h1, .header-h1 {
+  font-size: 36px;
+}
+ul, li {
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 0;
+}
