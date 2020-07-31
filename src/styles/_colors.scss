@@ -18,6 +18,9 @@ $red: #D0021B;
 .text-default {
   @include text-default-color;
 }
-.text-alternate {
+.text-white {
+  color: $true-white;
+}
+.text-yellow {
   color: $yellow;
 }

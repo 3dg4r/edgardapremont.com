@@ -1,7 +1,17 @@
-header {
+.header {
   background-color: $primary;
   padding: 24px;
   color: $true-white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-text {
+  padding: 12px;
+  border: 2px solid $true-white;
+  width: calc(100% - 157px);
+  h1 {
+    margin-top: 0;
+  }
 }
 .subhead {
   width: 612px;
@@ -10,6 +20,7 @@ header {
   font-weight: 400;
   flex-wrap: wrap;
   align-items: baseline;
+  margin-bottom: 8px;
 
   li {
     margin-bottom: 12px;
@@ -33,17 +44,28 @@ header {
       position: static;
       padding-left: 0;
       margin-right: 24px;
+      &:before {
+        display: none;
+      }
     }
   }
 }
-.banner {
-  position: absolute;
-  top: 0;
-  left: auto;
-  right: 48px;
+.navigation {
+  a {
+    color: $true-white;
+    font-size: 20px;
+    &.current {
+      color: $yellow;
+    }
+  }
+}
+.header-flag {
+  position: relative;
   background-color: $yellow;
   width: 113px;
   height: 216px;
+  border: 2px solid $true-white;
+  margin-left: 12px;
 
   .center-stripe {
     background-color: $red;
@@ -77,4 +99,14 @@ header {
       background-size: cover;
     }
   }
+}
+.banner {
+  width: 100%;
+  margin: 12px 0;
+  border: 2px solid $true-white;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 48px;
+  color: $yellow;
 }
